@@ -1,0 +1,45 @@
+body{
+    background-color:midnightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: monospace;
+    font-size: 25px;
+    color:black;
+}
+
+h3{
+    font-family: monospace;
+    font-size: 24px;
+    color:mediumblue;
+}
+
+button{
+    background-color: slategrey;
+    color:snow;
+    height: 35px;
+    width: 140px;
+}
+
+.divs{
+    border: 0.3em solid darkorange;
+    background-color:cornsilk;
+    padding: 20px;
+    margin: 30px;
+}
+
+select{
+    background-color:lightsalmon;
+    color:ghostwhite;
+    height: 25px;
+    width: 190px;
+}
+
+#btncargar{
+    background-color:palegoldenrod;
+    color:navy;
+    height: 30px;
+    width: 140px;
+}
+
