@@ -23,7 +23,7 @@ button{
 }
 
 .divs{
-    border: 0.3em solid darkorange;
+    border: 0.4em solid darkorange;
     background-color:cornsilk;
     padding: 20px;
     margin: 30px;
@@ -43,3 +43,9 @@ select{
     width: 140px;
 }
 
+.divs2{
+    border: 0.3em solid dimgrey;
+    background-color:palegoldenrod;
+    padding: 20px;
+    margin: 30px;
+}

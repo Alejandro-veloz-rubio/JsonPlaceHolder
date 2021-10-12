@@ -7,6 +7,32 @@ let options=function(json){
 
 };
 
+let cargarcom=function(postid){
+    //console.log(`los comentarios del post ${postid}`)
+    let coments=document.getElementById(`coments${postid}`);
+    fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postid}`)
+      .then(response => response.json())
+      .then(json => {
+          let lista=`<br><button type='button' onclick='quitarcom(${postid})'>Quitar Comentarios</button>`;
+          for(let i=0;i<json.length;i++){
+              lista+=`
+              <div class="divs2">
+              <h3>Name: ${json[i].name}</h3>
+              <h4>Email: ${json[i].email}</h4>
+              <p>Coment: ${json[i].body}</p>
+              </div>
+              `;
+            coments.innerHTML=lista;
+          }
+
+    })
+}
+
+function quitarcom(postid){
+    let coments=document.getElementById(`coments${postid}`);
+    coments.innerHTML="";
+}
+
 let divusers=function(json){
     let res="";
     for(let i=0;i<json.length;i++){
@@ -14,7 +40,7 @@ let divusers=function(json){
         <div class="divs">
         <h3>${json[i].title}</h3>
         <p>${json[i].body}</p>
-        <button>Ver Comentarios</button>
+        <button type='button' onclick='cargarcom(${json[i].id})'>Ver Comentarios</button>
         <div id='coments${json[i].id}'></div>
         </div>`;
     };
