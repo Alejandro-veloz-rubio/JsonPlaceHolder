@@ -1,4 +1,4 @@
-let options=function(json){
+options=(json)=>{
     let res='';
     for(let i=0;i<json.length;i++){
         res+=`<option value=${json[i].id}>${json[i].username}</option>`;
@@ -7,7 +7,7 @@ let options=function(json){
 
 };
 
-let cargarcom=function(postid){
+cargarcom=(postid)=>{
     //console.log(`los comentarios del post ${postid}`)
     let coments=document.getElementById(`coments${postid}`);
     fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postid}`)
@@ -28,12 +28,12 @@ let cargarcom=function(postid){
     })
 }
 
-function quitarcom(postid){
+quitarcom=(postid)=>{
     let coments=document.getElementById(`coments${postid}`);
     coments.innerHTML="";
 }
 
-let divusers=function(json){
+divusers=(json)=>{
     let res="";
     for(let i=0;i<json.length;i++){
         res+=`
