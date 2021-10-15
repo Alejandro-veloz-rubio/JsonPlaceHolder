@@ -15,6 +15,11 @@ h3{
     color:mediumblue;
 }
 
+h4{
+    font-family: monospace;
+    font-size: 19px;
+}
+
 button{
     background-color: slategrey;
     color:snow;
@@ -43,9 +48,27 @@ select{
     width: 140px;
 }
 
-.divs2{
-    border: 0.3em solid dimgrey;
+#btndatos{
     background-color:palegoldenrod;
+    color:navy;
+    height: 30px;
+    width: 140px;
+    position: relative;
+    left: 340px;
+    top: 30px;
+}
+
+.divs2{
+    border: 0.3em solid coral;
+    background-color:khaki;
     padding: 20px;
     margin: 30px;
 }
+
+.divs3{
+    border: 0.5em solid teal;
+    background-color:lightblue;
+    padding: 20px;
+    margin: 30px;
+}
+
